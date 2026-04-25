@@ -1,0 +1,34 @@
+/VolunteerPlatform
+│
+├── /VolunteerPlatform.Domain (Core)
+│   ├── Entities/
+│   │   ├── User.cs, Project.cs, Skill.cs, Application.cs
+│   │   └── Message.cs        <-- Yeni: Mesaj entity'si
+│   └── Enums/
+│       ├── ProjectStatus.cs, Role.cs
+│       └── MessageStatus.cs  <-- Yeni: Okundu/Okunmadı gibi durumlar
+│
+├── /VolunteerPlatform.Data (Infrastructure)
+│   ├── AppDbContext.cs
+│   ├── Migrations/
+│   └── Configurations/       <-- Message.cs için Fluent API burada olacak
+│
+├── /VolunteerPlatform.Service
+│   ├── Interfaces/
+│   │   ├── IProjectService, IMatchingService, IUserService
+│   │   └── IChatService      <-- Yeni: Mesajlaşma iş mantığı
+│   └── Concrete/
+│       ├── ProjectService, MatchingService, UserService
+│       └── ChatService       <-- Yeni: Mesaj kaydetme/getirme mantığı
+│
+└── /VolunteerPlatform.API
+    ├── Controllers/
+    │   ├── ...
+    │   └── MessagesController.cs <-- Yeni: Geçmiş mesajları çekmek için REST
+    ├── Hubs/                     <-- Yeni: SignalR ile Real-time iletişim
+    │   └── ChatHub.cs            <-- Burası sunumdan sonra "canlanacak"
+    ├── DTOs/
+    │   └── MessageDto.cs         <-- Yeni: Mesaj gönderirken kullanılacak veri modeli
+    └── Program.cs
+
+

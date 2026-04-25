@@ -1,0 +1,11 @@
+# Build artifacts
+bin/
+obj/
+
+# VS Code & IDE settings
+.vs/
+.vscode/
+*.user
+*.suo
+*.userprefs
+postgres_data/
