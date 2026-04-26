@@ -14,6 +14,8 @@ public class Application
     
     public DateTime AppliedAt { get; set; } = DateTime.UtcNow;
     public string CoverLetter { get; set; } = string.Empty;
+    public VolunteerPlatform.Domain.Enums.ApplicationStatus Status { get; set; } = VolunteerPlatform.Domain.Enums.ApplicationStatus.Pending;
+
 
     /*
 

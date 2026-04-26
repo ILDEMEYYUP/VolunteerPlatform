@@ -54,6 +54,28 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
+Concrete/
+ ApplicationService.cs
+ GenericService.cs
+ MessageService.cs
+ ProjectService.cs
+ ReportService.cs
+ SkillService.cs
+ UserService.cs
+DTOs/UserPortfolio/
+ PortfolioApplicationDto.cs
+ PortfolioProjectDto.cs
+ PortfolioSkillDto.cs
+ PortfolioTeammateDto.cs
+ UserPortfolioDto.cs
+Interfaces/
+ IApplicationService.cs
+ IGenericService.cs
+ IMessageService.cs
+ IProjectService.cs
+ IReportService.cs
+ ISkillService.cs
+ IUserService.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  VolunteerPlatform.Service.AssemblyInfo.cs

@@ -62,6 +62,7 @@ Entities/
  Skill.cs
  User.cs
 Enums/
+ ApplicationStatus.cs
  MessageStatus.cs
  ProjectStatus.cs
  Role.cs
